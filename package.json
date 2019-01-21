@@ -1,0 +1,15 @@
+{
+  "name": "dankneon-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "The Atom adaptation of dankneon.com syntax theme.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/dankneon/atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
