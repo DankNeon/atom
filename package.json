@@ -2,14 +2,19 @@
   "name": "dankneon-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "The Atom adaptation of dankneon.com syntax theme.",
+  "description": "A danker, more neon theme for Atom",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/dankneon/atom",
+  "repository": "https://github.com/DankNeon/atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  }
+  },
+  "author": [
+    "Stephanie H. <> (https://github.com/stephfh)",
+    "Jacobi Petrucciani <jacobi@mimirhq.com> (https://github.com/jpetrucciani)",
+    "Conlin Durbin <sup@wuz.fyi> (https://github.com/wuz)"
+  ]
 }
