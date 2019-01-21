@@ -35,7 +35,7 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @oceanblue;
   }
 
   .invisible {
@@ -55,7 +55,7 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: lighten(@black, 10%);
+  color: @sharkblue;
 }
 
 .syntax--keyword {
@@ -74,7 +74,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @yellow;
   }
 }
 
@@ -83,14 +83,14 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @yellow;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @yellow;
   }
 
   &.syntax--other.syntax--color {
@@ -127,7 +127,7 @@ atom-text-editor {
     color: @cyan;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @yellow;
     }
   }
 
@@ -139,7 +139,7 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @oceanblue;
     }
 
     &.syntax--string,
@@ -155,7 +155,7 @@ atom-text-editor {
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @yellow;
       font-weight: bold;
     }
 
@@ -173,7 +173,7 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @yellow;
   }
 
   &.syntax--function  {
@@ -190,7 +190,7 @@ atom-text-editor {
     color: @blue;
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @yellow;
     text-decoration: none;
   }
 
@@ -198,7 +198,7 @@ atom-text-editor {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @yellow;
   }
 
   &.syntax--name.syntax--section {
@@ -211,7 +211,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @green;
+    color: @dankgreen;
 
     &.syntax--id {
       color: @blue;
@@ -221,11 +221,11 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @yellow;
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @yellow;
   }
 
   &.syntax--require {
@@ -237,7 +237,7 @@ atom-text-editor {
   }
 
   &.syntax--separator {
-    background-color: @gray;
+    background-color: @shallowblue;
     color: @syntax-text-color;
   }
 }
@@ -248,7 +248,7 @@ atom-text-editor {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @yellow;
     font-weight: bold;
   }
 
@@ -278,7 +278,7 @@ atom-text-editor {
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @yellow;
   }
 
   &.syntax--raw.syntax--inline {
@@ -289,7 +289,7 @@ atom-text-editor {
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @dankgreen;
   }
 }
 
