@@ -1,28 +1,83 @@
-@import "colors";
+@import "dankneon";
 
-// General colors
-@syntax-text-color: @toothgrey;
-@syntax-cursor-color: @toothgrey;
-@syntax-selection-color: lighten(@shallowdark, 2%);
+@syntax-transition-time: 400ms;
+
+@syntax-theme-name: dankneon-atom-syntax;
+
 @syntax-background-color: @deepdark;
+@syntax-cursor-line: lighten(@deepdark, 1%);
+@syntax-selection-color: lighten(@deepdark, 3%);
+@syntax-selection-flash-color: @oceanblue;
+@syntax-text-color: @gunmetal;
 
-// Guide colors
+@syntax-cursor-color: @syntax-text-color;
+@syntax-indent-guide-color: @shallowblue;
+@syntax-invisible-character-color: @deepblue;
 @syntax-wrap-guide-color: @deepblue;
-@syntax-indent-guide-color: @deepblue;
-@syntax-invisible-character-color: @toothgrey;
 
-// For find and replace markers
-@syntax-result-marker-color: darken(@toothgrey, 20%);
-@syntax-result-marker-color-selected: lighten(@toothgrey, 10%);
-
-// Gutter colors
-@syntax-gutter-text-color: darken(@toothgrey, 50%);
-@syntax-gutter-text-color-selected: @toothgrey;
-@syntax-gutter-background-color: darken(@shallowdark, 1%);
-@syntax-gutter-background-color-selected: lighten(@shallowdark, 5%);
-
-// For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
 @syntax-color-added: @green;
-@syntax-color-modified: darken(@yellow, 20%);
+@syntax-color-modified: @yellow;
 @syntax-color-removed: @red;
+@syntax-color-renamed: @lightblue;
+
+@syntax-gutter-background-color: darken(@shallowdark, 3%);
+@syntax-gutter-background-color-selected: @shallowdark;
+@syntax-gutter-icon-color-folded: @oceanblue;
+@syntax-gutter-text-color: @syntax-gutter-text-color-subtle;
+@syntax-gutter-text-color-selected: @gunmetal;
+@syntax-gutter-text-color-subtle: fade(@syntax-text-color, 40%);
+
+
+@syntax-color-annotation: @dankgreen;
+@syntax-color-attribute: @dankgreen;
+@syntax-color-attribute-id: @dankblue;
+@syntax-color-class: @dankblue;
+@syntax-color-comment: @oceanblue;
+@syntax-color-constant: @red;
+@syntax-color-embedded: @toothgrey;
+@syntax-color-escape: @toothgrey;
+@syntax-color-function: @dankgreen;
+@syntax-color-import: @yellow;
+@syntax-color-keyword: @dankgreen;
+@syntax-color-method: @purple;
+@syntax-color-numeric: @blue;
+@syntax-color-operator: @lightblue;
+@syntax-color-placeholder: @toothgrey;
+@syntax-color-preprocessor: @pink;
+@syntax-color-primitive: @light-orange;
+@syntax-color-property: @dankblue;
+@syntax-color-punctuation: @gunmetal;
+@syntax-color-regexp: @gunmetal;
+@syntax-color-require: @yellow;
+@syntax-color-selector: @dankgreen;
+@syntax-color-snippet: @pink;
+@syntax-color-storage: @darkred;
+@syntax-color-string: @gunmetal;
+@syntax-color-tag: @toothgrey;
+@syntax-color-tag-template: @toothgrey;
+@syntax-color-type: @dankgreen;
+@syntax-color-unit: @dankblue;
+@syntax-color-variable: @red;
+@syntax-deprecated: @oceanblue;
+@syntax-illegal: @red;
+
+@syntax-color-css-property: @toothgrey;
+@syntax-color-diff-separator: @dankblue;
+@syntax-color-java-bracket-angle: @pink;
+@syntax-color-java-javadoc-tag: @red;
+@syntax-color-markup-code: @dankblue;
+@syntax-color-markup-entity: @dankgreen;
+@syntax-color-markup-heading: @dankblue;
+@syntax-color-markup-heading-marker: @dankgreen;
+@syntax-color-markup-hr: @toothgrey;
+@syntax-color-markup-link: @dankgreen;
+@syntax-color-markup-punctuation: @toothgrey;
+@syntax-color-markup-quote: @toothgrey;
+
+@syntax-bracket-matcher-color: @dankgreen;
+@syntax-result-marker-color: fade(@dankblue, 30%);
+@syntax-result-marker-color-selected: @dankblue;
+
+@syntax-border-radius: 4px;
+
+@theme-setting-accessibility-custom-comment-contrast: 0%;
