@@ -1,0 +1,74 @@
+.syntax--source.syntax--java {
+  .syntax--comment.syntax--block.syntax--javadoc {
+    .syntax--variable.syntax--parameter {
+      color: @syntax-color-function;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--operator.syntax--instanceof {
+      color: @syntax-color-keyword;
+    }
+
+    &.syntax--other.syntax--documentation.syntax--javadoc {
+      color: @syntax-color-java-javadoc-tag;
+    }
+  }
+
+  .syntax--punctuation.syntax--bracket.syntax--angle {
+    color: @syntax-color-java-bracket-angle;
+  }
+
+  .syntax--storage {
+    &.syntax--modifier {
+      &.syntax--import,
+      &.syntax--package {
+        color: @syntax-color-import;
+      }
+    }
+
+    &.syntax--type {
+      color: @syntax-color-class;
+
+      &.syntax--annotation {
+        color: @syntax-color-annotation;
+      }
+
+      &.syntax--primitive {
+        color: @syntax-color-keyword;
+      }
+    }
+  }
+}
+
+.syntax--source.syntax--scala {
+  .syntax--entity.syntax--name.syntax--package {
+    color: @syntax-color-class;
+  }
+
+  .syntax--meta.syntax--import {
+    color: @syntax-color-class;
+
+    .syntax--variable {
+      color: @syntax-color-class;
+    }
+  }
+
+  .syntax--scala.syntax--type {
+    color: @syntax-color-class;
+
+    .syntax--class {
+      color: @syntax-color-class;
+    }
+  }
+}
+
+.syntax--source.syntax--java-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @syntax-color-keyword;
+
+    & > .syntax--punctuation {
+      color: @syntax-color-punctuation;
+    }
+  }
+}

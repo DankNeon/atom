@@ -1,0 +1,32 @@
+.syntax--source.syntax--css,
+.syntax--source.syntax--css.syntax--less,
+.syntax--source.syntax--css.syntax--scss,
+.syntax--source.syntax--css.syntax--sass {
+  .syntax--meta {
+    &.syntax--at-rule {
+      .syntax--punctuation.syntax--definition.syntax--keyword {
+        color: @syntax-color-keyword;
+      }
+
+      & > .syntax--string.syntax--quoted {
+        color: @syntax-color-class;
+      }
+    }
+
+    &.syntax--property-value {
+      .syntax--punctuation.syntax--definition.syntax--constant {
+        color: @syntax-color-keyword;
+      }
+    }
+  }
+
+  .syntax--support {
+    &.syntax--constant.syntax--property-value {
+      color: @syntax-color-keyword;
+    }
+
+    &.syntax--type.syntax--property-name {
+      color: @syntax-color-css-property;
+    }
+  }
+}

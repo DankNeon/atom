@@ -1,0 +1,13 @@
+.syntax--source.syntax--python {
+  .syntax--variable.syntax--parameter {
+    color: @syntax-color-variable;
+  }
+
+  .syntax--meta.syntax--function-call {
+    color: @syntax-color-function;
+
+    &.syntax--arguments {
+      color: @syntax-color-variable;
+    }
+  }
+}
