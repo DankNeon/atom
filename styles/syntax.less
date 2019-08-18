@@ -8,10 +8,10 @@
 }
 
 .syntax--comment {
-  color: @syntax-color-comment;
+  color: @sharkBlue;
 
   .syntax--markup.syntax--link {
-    color: @syntax-color-comment;
+    color: @sharkBlue;
     text-decoration: none;
 
     &:hover {
@@ -21,101 +21,101 @@
 }
 
 .syntax--constant {
-  color: @syntax-color-constant;
+  color: @dankGreen;
 
   &.syntax--character.syntax--escape {
-    color: @syntax-color-escape;
+    color: @dankGreenDark;
   }
 
   &.syntax--numeric,
   &.syntax--other.syntax--color {
-    color: @syntax-color-numeric;
+    color: @miamiSky;
   }
 
   &.syntax--language {
-    color: @syntax-color-keyword;
+    color: @neonRedDark;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @syntax-color-constant;
+    color: @neonRedDark;
   }
 
   &.syntax--other.syntax--placeholder {
-    color: @syntax-color-placeholder;
+    color: @miamiSkyDark;
   }
 
   &.syntax--variable {
-    color: @syntax-color-variable;
+    color: @dankGreenDark;
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @syntax-color-function;
+    color: @dankGreenDark;
   }
 
   &.syntax--name.syntax--class,
   &.syntax--name.syntax--type.syntax--class {
-    color: @syntax-color-class;
+    color: @neonRedDark;
   }
 
   &.syntax--name.syntax--section {
-    color: @syntax-color-keyword;
+    color: @dankGreenDark;
   }
 
   &.syntax--name.syntax--tag {
-    color: @syntax-color-tag;
+    color: @dankGreen;
   }
 
   &.syntax--name.syntax--type {
-    color: @syntax-color-type;
+    color: @dankGreen;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @syntax-color-class;
+    color: @neonRedDark;
     font-weight: bold;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @syntax-color-attribute;
+    color: @miamiSky;
 
     &.syntax--id {
-      color: @syntax-color-attribute-id;
-      text-decoration: underline;
+      color: @dankGreenDark;
+      text-decoration: none;
     }
   }
 }
 
 .syntax--invalid {
   &.syntax--deprecated {
-    color: @syntax-deprecated !important;
+    color: @sunnyYellowDark !important;
     text-decoration: line-through !important;
   }
 
   &.syntax--illegal {
-    color: @syntax-text-color !important;
-    background-color: @syntax-illegal !important;
+    color: @toothGrey !important;
+    background-color: @toothGrey !important;
   }
 }
 
 .syntax--keyword {
-  color: @syntax-color-keyword;
+  color: @dankGreenDark;
 
   &.syntax--control {
-    color: @syntax-color-keyword;
+    color: @dankGreenDark;
   }
 
   &.syntax--operator {
-    color: @syntax-color-operator;
+    color: @neonRedDark;
   }
 
   &.syntax--other.syntax--special-method {
-    color: @syntax-color-method;
+    color: @neonRedDark;
     font-style: italic;
   }
 
   &.syntax--other.syntax--unit {
-    color: @syntax-color-unit;
+    color: @neonRedDark;
   }
 }
 
@@ -125,11 +125,11 @@
   }
 
   &.syntax--changed {
-    color: @syntax-color-modified;
+    color: @sunnyYellow;
   }
 
   &.syntax--deleted {
-    color: @syntax-color-removed;
+    color: @neonRed;
   }
 
   &.syntax--italic {
@@ -137,14 +137,14 @@
   }
 
   &.syntax--heading {
-    color: @syntax-color-markup-heading;
+    color: @dankGreen;
 
     .syntax--marker {
-      color: @syntax-color-markup-heading-marker;
+      color: @dankGreenDark;
     }
 
     .syntax--punctuation.syntax--definition.syntax--heading {
-      color: @syntax-color-markup-heading;
+      color: @dankGreen;
     }
   }
 
@@ -157,11 +157,11 @@
   }
 
   &.syntax--quote {
-    color: @syntax-color-markup-quote;
+    color: @dankGreenDark;
   }
 
   &.syntax--raw {
-    color: @syntax-color-markup-code;
+    color: @dankBlue;
   }
 }
 
@@ -169,11 +169,11 @@
   color: @syntax-text-color;
 
   &.syntax--brace {
-    color: @syntax-color-punctuation;
+    color: @toothGrey;
   }
 
   &.syntax--class {
-    color: @syntax-color-class;
+    color: @neonRed;
 
     &.syntax--body {
       color: @syntax-text-color;
@@ -181,7 +181,7 @@
   }
 
   &.syntax--definition.syntax--variable {
-    color: @syntax-color-variable;
+    color: @dankGreen;
   }
 
   &.syntax--link {
@@ -189,7 +189,7 @@
   }
 
   &.syntax--method {
-    color: @syntax-color-method;
+    color: @dankGreenDark;
 
     &.syntax--body {
       color: @syntax-text-color;
@@ -197,28 +197,28 @@
   }
 
   &.syntax--method-call {
-    color: @syntax-color-variable;
+    color: @dankGreenDark;
   }
 
   &.syntax--require {
-    color: @syntax-color-require;
+    color: @dankGreenDark;
   }
 
   &.syntax--selector {
-    color: @syntax-color-selector;
+    color: @dankGreen;
   }
 
   &.syntax--separator {
-    color: @syntax-color-punctuation;
+    color: @dankGreenDark;
   }
 
   &.syntax--tag {
-    color: @syntax-color-tag;
+    color: @dankGreen;
   }
 }
 
 .syntax--punctuation {
-  color: @syntax-color-punctuation;
+  color: @miamiSky;
 
   &.syntax--definition {
     &.syntax--array,
@@ -227,7 +227,7 @@
     &.syntax--parameters,
     &.syntax--separator,
     &.syntax--seperator {
-      color: @syntax-color-variable;
+      color: @dankGreen;
     }
 
     &.syntax--bold {
@@ -235,12 +235,12 @@
     }
 
     &.syntax--comment {
-      color: @syntax-color-comment;
+      color: @shallowBlue;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @syntax-color-markup-heading;
+      color: @dankGreen;
     }
 
     &.syntax--italic {
@@ -248,46 +248,46 @@
     }
 
     &.syntax--tag {
-      color: @syntax-color-tag;
+      color: @dankGreen;
     }
   }
 
   &.syntax--section {
     &.syntax--embedded {
-      color: @syntax-color-embedded;
+      color: @dankGreenDark;
     }
 
     &.syntax--class,
     &.syntax--inner-class,
     &.syntax--method {
-      color: @syntax-color-class;
+      color: @neonRed;
     }
   }
 }
 
 .syntax--storage {
-  color: @syntax-color-storage;
+  color: @neonRed;
 
   &.syntax--modifier {
     &.syntax--import,
     &.syntax--package {
-      color: @syntax-color-import;
+      color: @neonRed;
     }
   }
 
   &.syntax--type {
     &.syntax--annotation,
     &.syntax--primitive {
-      color: @syntax-color-primitive;
+      color: @miamiSky;
     }
   }
 }
 
 .syntax--string {
-  color: @syntax-color-string;
+  color: @miamiSky;
 
   &.syntax--other.syntax--link {
-    color: @syntax-color-string;
+    color: @miamiSky;
     text-decoration: none;
 
     &:hover {
@@ -296,14 +296,14 @@
   }
 
   & > .syntax--punctuation.syntax--definition.syntax--string {
-    color: @syntax-color-punctuation;
+    color: @miamiSky;
   }
 
   &.syntax--regexp {
-    color: @syntax-color-regexp;
+    color: @miamiSkyDark;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @syntax-color-regexp;
+      color: @miamiSkyDark;
     }
   }
 
@@ -314,19 +314,19 @@
 
 .syntax--support {
   &.syntax--class {
-    color: @syntax-color-class;
+    color: @neonRed;
   }
 
   &.syntax--function {
-    color: @syntax-color-function;
+    color: @neonRedDark;
 
     &.syntax--any-method {
-      color: @syntax-color-method;
+      color: @dankGreenDark;
     }
   }
 
   &.syntax--type {
-    color: @syntax-color-type;
+    color: @dankGreen;
   }
 }
 
@@ -335,18 +335,18 @@
 }
 
 .syntax--variable {
-  color: @syntax-color-variable;
+  color: @dankGreen;
 
   &.syntax--interpolation {
-    color: @syntax-color-variable;
+    color: @dankGreen;
     font-style: italic;
   }
 
   &.syntax--language {
-    color: @syntax-color-keyword;
+    color: @neonRed;
   }
 
   &.syntax--parameter {
-    color: @syntax-color-variable;
+    color: @dankGreen;
   }
 }
