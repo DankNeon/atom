@@ -1,0 +1,30 @@
+.syntax--source.syntax--cs {
+  .syntax--entity.syntax--name.syntax--interface.syntax--class {
+    font-weight: bold;
+  }
+
+  .syntax--meta {
+    &.syntax--method.syntax--annotation {
+      color: @dankGreen;
+    }
+
+    &.syntax--namespace.syntax--body {
+      color: @neonRed;
+    }
+
+    &.syntax--directive.syntax--preprocessor {
+      color: @vicePurple;
+    }
+
+    .syntax--generic.syntax--method.syntax--identifier {
+      color: @sharkBlue;
+    }
+  }
+
+  .syntax--punctuation.syntax--section.syntax--class {
+    &.syntax--begin,
+    &.syntax--end {
+      color: @sharkBlue;
+    }
+  }
+}

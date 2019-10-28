@@ -1,0 +1,74 @@
+.syntax--source.syntax--java {
+  .syntax--comment.syntax--block.syntax--javadoc {
+    .syntax--variable.syntax--parameter {
+      color: @dankGreen;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--operator.syntax--instanceof {
+      color: @dankGreen;
+    }
+
+    &.syntax--other.syntax--documentation.syntax--javadoc {
+      color: @neonRed;
+    }
+  }
+
+  .syntax--punctuation.syntax--bracket.syntax--angle {
+    color: @vicePurple;
+  }
+
+  .syntax--storage {
+    &.syntax--modifier {
+      &.syntax--import,
+      &.syntax--package {
+        color: @sunnyYellow;
+      }
+    }
+
+    &.syntax--type {
+      color: @neonRed;
+
+      &.syntax--annotation {
+        color: @dankGreenDark;
+      }
+
+      &.syntax--primitive {
+        color: @dankGreen;
+      }
+    }
+  }
+}
+
+.syntax--source.syntax--scala {
+  .syntax--entity.syntax--name.syntax--package {
+    color: @neonRed;
+  }
+
+  .syntax--meta.syntax--import {
+    color: @neonRed;
+
+    .syntax--variable {
+      color: @neonRed;
+    }
+  }
+
+  .syntax--scala.syntax--type {
+    color: @neonRed;
+
+    .syntax--class {
+      color: @neonRed;
+    }
+  }
+}
+
+.syntax--source.syntax--java-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @miamiSky;
+
+    & > .syntax--punctuation {
+      color: @miamiSkyDark;
+    }
+  }
+}

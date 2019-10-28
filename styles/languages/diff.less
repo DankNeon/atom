@@ -1,0 +1,19 @@
+.syntax--source.syntax--diff {
+  .syntax--meta {
+    &.syntax--range.syntax--context,
+    &.syntax--header.syntax--from-file {
+      color: @neonRed;
+    }
+  }
+
+  .syntax--punctuation.syntax--definition.syntax--separator {
+    color: @shallowBlue;
+  }
+
+  .syntax--punctuation.syntax--definition {
+    &.syntax--from-file,
+    &.syntax--range {
+      color: @neonRed;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.syntax--text.syntax--xml {
+  .syntax--constant.syntax--character {
+    &.syntax--entity,
+    .syntax--punctuation.syntax--definition {
+      color: @dankGreen;
+    }
+  }
+
+  .syntax--entity.syntax--name.syntax--tag.syntax--namespace {
+    color: @dankGreenDark;
+  }
+
+  .syntax--string.syntax--unquoted.syntax--cdata {
+    color: @shallowBlue;
+
+    .syntax--punctuation.syntax--definition {
+      color: @sharkBlue;
+      font-weight: bold;
+    }
+  }
+}

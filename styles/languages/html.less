@@ -1,0 +1,28 @@
+
+.syntax--html {
+
+  &.syntax--entity.syntax--name.syntax--tag {
+    color: @dankGreen;
+  }
+
+  &.syntax--attribute-name {
+    color: @toothGrey;
+  }
+
+  &.syntax--string {
+    color: @neonRed;
+  }
+  &.syntax--string.syntax--punctuation {
+    color: @neonRed;
+  }
+
+  &.syntax--string .syntax--link {
+    color: @dankGreen;
+    font-style: italic;
+  }
+
+  &.syntax--embedded .syntax--entity.syntax--name.syntax--tag {
+    color: @neonRed;
+    font-style: italic;
+  }
+}
